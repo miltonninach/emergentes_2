@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Carrito Simple</title>
+</head>
+<body>
+    <h2>Agregar Producto</h2>
+    <form method="POST">
+        <input type="text" name="producto" placeholder="Producto">
+        <button type="submit">Agregar</button>
+    </form>
+
+    <h3>Productos:</h3>
+    <ul>
+        {% for p in carrito %}
+            <li>{{ p }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
